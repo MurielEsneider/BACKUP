@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Products Cart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <main id="root">
+        <div class="container">
+            <h2>Products List</h2>
+
+            <div class="content-cart">
+                <button type="button" id="button-cart">
+                    <span class="qty-cart">0</span>
+                    <span class="material-icons">
+                        shopping_cart
+                    </span>
+                </button>
+            </div>
+
+            <div class="products">
+                <div class="item">
+                    <div class="picture">
+                        <img src="https://media.solotodo.com/media/cache/f8/97/f897b9a1e0f394c1b352cbf430f08707.png">
+                    </div>
+                    <div class="name">ASUS TUF FX505DT-BQ404T</div>
+                    <div class="price">$669.990</div>
+
+                    <button type="button" class="add-to-cart" data-id="1">Add To Cart</button>
+                </div>
+                <div class="item">
+                    <div class="picture">
+                        <img src="https://publicapi.solotodo.com/products/70059/picture/?width=300&height=200">
+                    </div>
+                    <div class="name">MSI GeForce GTX 1650 SUPER GAMING X</div>
+                    <div class="price">$227.900</div>
+
+                    <button type="button" class="add-to-cart" data-id="2">Add To Cart</button>
+                </div>
+                <div class="item">
+                    <div class="picture">
+                        <img src="https://publicapi.solotodo.com/products/30271/picture/?width=300&height=300">
+                    </div>
+                    <div class="name">Sony PS4 Slim 500 GB</div>
+                    <div class="price">$359.990</div>
+
+                    <button type="button" class="add-to-cart" data-id="3">Add To Cart</button>
+                </div>
+                <div class="item">
+                    <div class="picture">
+                        <img src="https://publicapi.solotodo.com/products/63564/picture/?width=300&height=300">
+                    </div>
+                    <div class="name">AMD Ryzen 7 3700X</div>
+                    <div class="price">$329.900</div>
+
+                    <button type="button" class="add-to-cart" data-id="4">Add To Cart</button>
+                </div>
+
+
+            </div>
+        </div>
+        <aside class="shopping-cart">
+
+            <h3 class="cart-title">Shopping Cart</h3>
+
+            <div id="products-cart">
+                
+            </div>
+
+            <div class="total-cart-checkout">
+                <div class="total">Total: $699.990</div>
+                <button class="btn-checkout" type="button">Checkout</button>
+            </div>
+
+        </aside>
+    </main>
+
+    <script src="./assets/js/index.js" type="module"></script>
+</body>
+
+</html>
